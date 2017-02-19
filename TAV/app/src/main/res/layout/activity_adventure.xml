@@ -49,70 +49,10 @@
         android:text="Keep moving here's your next adventure..."
         android:textSize="18dp"/>
 
-    <ScrollView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <CheckBox
-                android:id="@+id/checkBox6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox"/>
-
-            <CheckBox
-                android:id="@+id/checkBox7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox"/>
-
-            <CheckBox
-                android:id="@+id/checkBox8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox"/>
-
-            <CheckBox
-                android:id="@+id/checkBox9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox"/>
-
-            <CheckBox
-                android:id="@+id/checkBox10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox"/>
-
-            <CheckBox
-                android:id="@+id/checkBox11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox"/>
-
-            <CheckBox
-                android:id="@+id/checkBox12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox"/>
-
-            <CheckBox
-                android:id="@+id/checkBox13"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="CheckBox"/>
-
-        </LinearLayout>
-
-
-    </ScrollView>
-
+        android:id="@+id/adventure_listView"
+        android:layout_below="@id/textView4"
+        android:layout_marginTop="16dp"/>
 </RelativeLayout>
