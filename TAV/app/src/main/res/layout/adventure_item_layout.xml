@@ -4,34 +4,42 @@
               android:layout_width="match_parent"
               android:layout_height="match_parent"
     android:padding="16dp">
-    <RelativeLayout
+    <TableRow
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <CheckBox
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:id="@+id/completion_checkbox"
-            android:layout_centerVertical="true"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/adventure_item_tablerow">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:id="@+id/completion_checkbox"
+                android:layout_centerVertical="true"/>
 
-        <TextView
-            android:id="@+id/adventure_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Read three chapters from the book of the week."
-            android:layout_alignParentTop="true"
-            android:layout_toEndOf="@+id/completion_checkbox"
-            android:textSize="20sp"
-            android:textColor="@color/colorBlack"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="450pts"
-            android:layout_below="@id/adventure_title"
-            android:layout_alignEnd="@id/adventure_title"
-            android:textSize="16sp"
-            android:layout_alignParentEnd="true"/>
-    </RelativeLayout>
+            <TextView
+                android:id="@+id/adventure_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Read three chapters from the book of the week."
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/completion_checkbox"
+                android:textSize="20sp"
+                android:textColor="@color/colorBlack"
+                android:paddingLeft="8dp"/>
+            <TextView
+                android:id="@+id/adventure_point_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="450pts"
+                android:layout_below="@id/adventure_title"
+                android:layout_alignEnd="@id/adventure_title"
+                android:textSize="16sp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </TableRow>
+
 
 
 </RelativeLayout>
