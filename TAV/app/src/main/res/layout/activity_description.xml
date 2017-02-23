@@ -11,6 +11,7 @@
     tools:context="com.anthony_powell.tav.AdventureDescriptionActivity">
 
     <ImageView
+        android:id="@+id/adventure_description_background_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
@@ -19,20 +20,78 @@
     <TextView
         android:id="@+id/adventure_description_title"
         android:layout_width="wrap_content"
-        android:layout_height="145dp"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:layout_marginTop="105dp"
-        android:gravity="center"
+        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
         android:textColor="@color/colorBlack"
         android:textSize="36sp"
         android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/adventure_buttons_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/decline_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:layout_margin="16dp"
+            fancy:fb_text='DECLINE'
+            fancy:fb_radius='30dp'
+            fancy:fb_defaultColor='@color/colorBlue'
+            fancy:fb_textColor='@color/colorBlack'
+            fancy:fb_borderColor='@color/colorBlack'
+            fancy:fb_borderWidth='2dp'
+            />
+
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:id="@+id/accept_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:layout_margin="16dp"
+            android:layout_marginRight="32dp"
+            fancy:fb_text='ACCEPT'
+            fancy:fb_radius='30dp'
+            fancy:fb_defaultColor='@color/colorBlue'
+            fancy:fb_textColor='@color/colorBlack'
+            fancy:fb_borderColor='@color/colorBlack'
+            fancy:fb_borderWidth='2dp'
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/adventure_description_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="100dp"
+        android:layout_above="@id/adventure_buttons_holder"
+        android:text="@string/lorem"/>
+
     <LinearLayout
         android:id="@+id/adventure_point_rating_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_below="@id/adventure_description_title"
+        android:layout_above="@id/adventure_description_description"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:gravity="center"
@@ -57,59 +116,6 @@
             android:layout_centerHorizontal="true"
             />
     </LinearLayout>
-
-
-
-    <TextView
-        android:id="@+id/adventure_description_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:gravity="center"
-        android:textColor="@color/colorBlack"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        android:layout_below="@id/adventure_point_rating_layout"
-        android:text="@string/lorem"/>
-
-    <mehdi.sakout.fancybuttons.FancyButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_margin="16dp"
-        fancy:fb_text='DECLINE'
-        fancy:fb_radius='30dp'
-        fancy:fb_defaultColor='@color/colorBlue'
-        fancy:fb_textColor='@color/colorBlack'
-        fancy:fb_borderColor='@color/colorBlack'
-        fancy:fb_borderWidth='2dp'
-        />
-
-    <mehdi.sakout.fancybuttons.FancyButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:paddingLeft="32dp"
-        android:paddingRight="32dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_margin="16dp"
-        android:layout_marginRight="32dp"
-        fancy:fb_text='ACCEPT'
-        fancy:fb_radius='30dp'
-        fancy:fb_defaultColor='@color/colorBlue'
-        fancy:fb_textColor='@color/colorBlack'
-        fancy:fb_borderColor='@color/colorBlack'
-        fancy:fb_borderWidth='2dp'
-        />
-
 
 
 </RelativeLayout>

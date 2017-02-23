@@ -44,6 +44,7 @@ public class AdventureItemAdapter extends ArrayAdapter<String> {
 
   final String adventureName = getItem(position);
 
+
   final TextView adventure = (TextView) view.findViewById(R.id.adventure_title);
   final TextView pointsTV = (TextView) view.findViewById(R.id.adventure_point_value);
 
@@ -53,6 +54,7 @@ public class AdventureItemAdapter extends ArrayAdapter<String> {
    @Override
    public void onClick(View v) {
     adventureDescription = adventure.getText().toString();
+    clickedItemPoints = pointsTV.getText().toString();
 
     ((AdventureActivity)context).descriptionIntent();
 
@@ -60,7 +62,7 @@ public class AdventureItemAdapter extends ArrayAdapter<String> {
   });
 
   if(!points.isEmpty() && points.size()>0){
-   clickedItemPoints = points.get(position);
+
    pointsTV.setText(points.get(position));
 
   }

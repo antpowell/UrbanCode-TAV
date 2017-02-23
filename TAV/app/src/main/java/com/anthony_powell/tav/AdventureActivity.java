@@ -23,7 +23,7 @@ public class AdventureActivity extends AppCompatActivity {
  public Intent intent;
 
  String[] adventureTitles = {"Read three chapters from book of the week.", "Clean the Chalk Board.", "Present summary to class.",
-   "Complete questions 1-13 odd numbers only from homework.", "Recite times table", "Answer five questions in class.", "Answer three questions in class.",
+   "Complete questions 1-13 odd numbers only from homework.", "Recite times table.", "Answer five questions in class.", "Answer three questions in class.",
    "Help pass out pencils."};
  List<String> points =new ArrayList<String>();
  AdventureItemAdapter adapter;
