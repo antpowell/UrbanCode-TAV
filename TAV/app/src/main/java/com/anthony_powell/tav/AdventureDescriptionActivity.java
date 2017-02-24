@@ -1,5 +1,6 @@
 package com.anthony_powell.tav;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -12,7 +13,7 @@ import android.widget.Toast;
 
 import mehdi.sakout.fancybuttons.FancyButton;
 
-public class AdventureDescriptionActivity extends AppCompatActivity {
+public class AdventureDescriptionActivity extends Activity {
 
  TextView adventureDescriptionText, adventurePoints;
 

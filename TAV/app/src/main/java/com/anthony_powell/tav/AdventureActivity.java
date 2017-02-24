@@ -1,5 +1,6 @@
 package com.anthony_powell.tav;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -17,7 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-public class AdventureActivity extends AppCompatActivity {
+public class AdventureActivity extends Activity {
 
  ListView listView;
  public Intent intent;
